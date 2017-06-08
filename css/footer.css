@@ -1,0 +1,31 @@
+#menu-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+
+    background: #212d43;
+}
+#menu-footer ul{
+    padding: 20px;
+}
+#menu-footer li{
+    display: inline-block;
+
+    margin: 5px 30px 5px 30px;
+}
+#menu-footer a{
+    font-size: 12px;
+
+    color: #ffffff;
+}
+/*--------------------------------------------------------------
+Responsive 768px
+--------------------------------------------------------------*/
+@media all and (max-width: 768px){
+    #menu-footer li{
+        display: block;
+    }
+}

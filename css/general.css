@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+
+    min-height: 100%;
+
+    padding-bottom: 68.4px;
+
+    box-sizing: border-box;
+    list-style-type: none;
+
+    font-size: 1em;
+    font-family: 'Proza Libre', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.wysiwyg p{
+    margin: 15px 0;
+}
+.wysiwyg ul, .wysiwyg ol{
+    margin: 15px 0;
+    padding: 0;
+
+    list-style-position: inside;
+}
+/*--------------------------------------------------------------
+Responsive 992px
+--------------------------------------------------------------*/
+@media all and (max-width: 992px){
+    body{
+        padding-bottom: 115.2px;
+    }
+}

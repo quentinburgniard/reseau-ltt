@@ -1,0 +1,45 @@
+#menu-header .horizontal-line{
+    display: none;
+}
+/*--------------------------------------------------------------
+Wrap
+--------------------------------------------------------------*/
+.who-are-we-section{
+    max-width: 1020px;
+
+    margin: 0 auto 0 auto;
+    padding: 60px 10px;
+
+    list-style-position: inside;
+}
+.who-are-we-section > header{
+    margin-bottom: 30px;
+
+    font-size: 1.5em;
+}
+.who-are-we-section > div{
+    font-family: 'Lato', sans-serif;
+}
+.who-are-we-section ul {
+    list-style: none;
+}
+.who-are-we-section li::before {
+    margin: 0 5px;
+
+    content: "•";
+
+    color: #fcb04e;
+}
+/*--------------------------------------------------------------
+Blue Wrap
+--------------------------------------------------------------*/
+#who-are-we-blue{
+    color: #ffffff;
+    background: #212d43;
+}
+/*--------------------------------------------------------------
+White Wrap
+--------------------------------------------------------------*/
+#who-are-we-white{
+    color: #212d43;
+}

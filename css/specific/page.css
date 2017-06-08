@@ -1,0 +1,11 @@
+#wrap-content{
+    max-width: 1020px;
+
+    margin: 60px auto 60px auto;
+    padding: 0px 10px;
+}
+#wrap-content a{
+    text-decoration: underline;
+
+    font-family: 'Lato', sans-serif;
+}

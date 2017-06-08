@@ -1,0 +1,119 @@
+#menu-header .horizontal-line{
+    display: none;
+}
+/*--------------------------------------------------------------
+Front Banner
+--------------------------------------------------------------*/
+.front-banner{
+    background-color: #212d42;
+}
+.front-banner-title{
+    margin: 0;
+    padding: 50px;
+
+    text-align: center;
+
+    font-size: 2em;
+
+    color: white;
+}
+/*--------------------------------------------------------------
+Front Actuality
+--------------------------------------------------------------*/
+.front-actuality{
+    max-width: 1020px;
+
+    margin: 60px auto 60px auto;
+    padding: 0px 10px;
+}
+.front-actuality-title{
+    margin: 0 0 15px 25px;
+
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #212d42;
+}
+.front-actuality-content{
+    padding: 0 10px;
+
+    border: 1px solid #D3D3D3;
+}
+.line-horizontal{
+    max-width: 550px;
+    height: 1px;
+
+    display: block;
+    margin: 30px auto;
+    background: #212d42;
+}
+.front-actuality-post {
+    margin: 30px 0 30px 0;
+}
+.front-actuality-img{
+    display: inline-block;
+
+    margin: 0 10px 10px 10px;
+
+    line-height: 1;
+}
+.front-actuality-txt{
+    display: inline-block;
+
+    max-width: 463px;
+
+    margin: 0 10px 0 10px;
+}
+.front-actuality-txt h4{
+    margin: 0 0 20px 0;
+
+    font-size: 24px;
+
+    color: #212d42;
+}
+.front-actuality-txt p{
+    margin: 0;
+
+    font-family: 'Lato', sans-serif;
+}
+.front-actuality-link{
+    margin-top: 20px;
+
+    line-height: 1;
+}
+.front-actuality-link img{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+.front-actuality-link span{
+    margin-left: 5px;
+
+    font-family: 'Lato', sans-serif;
+
+    color: #fcb04e;
+
+    vertical-align: middle;
+}
+/*--------------------------------------------------------------
+Responsive 1200px
+--------------------------------------------------------------*/
+@media all and (max-width: 1200px){
+    .front-banner-title {
+        font-size: 1.5em;
+    }
+}
+/*--------------------------------------------------------------
+Responsive 992px
+--------------------------------------------------------------*/
+@media all and (max-width: 992px){
+    .front-banner-title {
+        font-size: 1.2em;
+    }
+    .front-actuality-img {
+        display: block;
+
+        text-align: center;
+    }
+}

@@ -1,0 +1,220 @@
+#menu-header{
+    position: relative;
+
+    height: 140px;
+}
+#menu-header > nav{
+    position: absolute;
+
+    top: 10px;
+    right: 0;
+    left: 0;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+#logo{
+    display: inline-block;
+}
+#header-ul{
+    display: inline-block;
+
+    float: right;
+
+    margin: 52px 10px 0 0;
+}
+.header-li{
+    display: inline-block;
+}
+.header-li a{
+    position: relative;
+
+    padding: 0px 14px;
+
+    font-size: 16px;
+
+    color: #212d43;
+}
+/*--------------------------------------------------------------
+Underline animation
+--------------------------------------------------------------*/
+.header-li a:before{
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    width: 0;
+    height: 3px;
+
+    content: '';
+    transition: width 0s ease, background .5s ease;
+}
+.header-li a:after{
+    display: block;
+
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+
+    width: 0;
+    height: 3px;
+
+    content: '';
+    transition: width .5s ease;
+
+    background: #fcb04e;
+}
+.header-li a:hover:before{
+    width: 100%;
+
+    transition: width .5s ease;
+
+    background: #fcb04e;
+}
+.header-li a:hover:after{
+    width: 100%;
+
+    transition: all 0s ease;
+
+    background: transparent;
+}
+/*--------------------------------------------------------------
+Hamburger Menu
+--------------------------------------------------------------*/
+#hamburger{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    cursor: pointer;
+    transform: translateY(-50%);
+    visibility: hidden;
+    z-index: 4;
+}
+#hamburger > span{
+    display: block;
+
+    position: relative;
+
+    width: 35px;
+    height: 2px;
+
+    margin: 5px 0;
+
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+    background: #212d43;
+}
+/*--------------------------------------------------------------
+Hamburger Menu Animation
+--------------------------------------------------------------*/
+#hamburger span:nth-child(1){
+    top: 0px;
+}
+
+#hamburger span:nth-child(2), #hamburger span:nth-child(3){
+    top: 0px;
+}
+#hamburger.active span:nth-child(1){
+    top: 18px;
+    left: 50%;
+
+    width: 0%;
+}
+#hamburger.active span:nth-child(2){
+    transform: rotate(45deg);
+
+    background-color: #f8b00d;
+}
+#hamburger.active span:nth-child(3){
+    top: -6px;
+
+    transform: rotate(-45deg);
+
+    background-color: #f8b00d;
+}
+#overlay{
+    display: none;
+
+    position: fixed;
+
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    background: #ffffff;
+}
+/*--------------------------------------------------------------
+Horizontal Line (Separation header/content)
+--------------------------------------------------------------*/
+.horizontal-line{
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 1px;
+
+    background: #d3d3d3;
+}
+/*--------------------------------------------------------------
+Responsive 992px
+--------------------------------------------------------------*/
+@media all and (max-width: 992px){
+    #menu-header{
+        height: 100px;
+    }
+    #menu-header > nav{
+        text-align: center;
+    }
+    #logo{
+        position: absolute;
+        left: 10px;
+    }
+    #logo img{
+        height: 80px;
+    }
+    #header-ul, .header-li{
+        display: block;
+    }
+    #header-ul{
+        display: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 80%;
+
+        margin-top: 0px;
+        padding-top: 120px;
+
+        overflow-y: hidden;
+        transform: translateY(-100%);
+        z-index: 3;
+
+        background-color: #ffffff;
+    }
+    .header-li {
+        margin: 20px auto;
+    }
+    .header-li a{
+        font-size: 1.2em;
+    }
+    #hamburger{
+        right: 40px;
+
+        visibility: visible;
+    }
+}
